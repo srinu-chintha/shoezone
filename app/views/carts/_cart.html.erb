@@ -1,0 +1,35 @@
+<% unless cart.line_items.empty? %>
+<div class="cart_title">
+	<h1 >Your Cart</h1>
+</div>
+
+<table class="table text-light">
+	<tr class="text-warning">
+	  <th scope="col">Name</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Cost</th>
+      <th scope="col">Price</th>
+      
+    </tr>
+	<%= render (cart.line_items) %>
+	<tr class="total-font">
+		<td colspan="3">Total</td>
+		<td class="total_cell"><%= number_to_indian_currency(cart.total_price)  %></td>
+	</tr>
+</table>
+<% session[:amount]=cart.total_price %>
+<% $cart=cart.line_items %>
+<%= button_to 'Empty Cart', cart, :method => :delete, :confirm => 'Are you sure?',class: "btn btn-outline-danger btn-sm" %>
+
+<%= link_to "Continue Shopping", '/gallery/index', {:style=>'color:#FFFFFF;', :class => "btn btn-outline-primary mt-2 btn-sm"} %>
+
+<% if user_signed_in? %>
+
+	<%= link_to "Checkout" ,'/gallery/checkout',{:style=>'color:#FFFFFF;', :class => "btn btn-outline-secondary btn-sm mt-2 "} %>
+
+
+<% else %>
+	<%= link_to "Checkout", new_user_session_path,{:style=>'color:#FFFFFF;', :class => "btn btn-outline-secondary btn-sm mt-2"} %>
+	<% end %>
+
+<% end %>

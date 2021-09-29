@@ -1,0 +1,25 @@
+// Place all the styles related to the stores controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.stores-new-bg{
+	overflow:auto;
+	background-image:url("https://images.unsplash.com/photo-1554103494-90f9e0883a85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80");
+	height:100vh;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	background-size:cover;
+}
+.stores-new-card{
+	width:500px;
+	background-color:#ffffff20;
+	padding:30px;
+	border:1px solid #ffffff;
+	border-radius:20px;
+}
+.stores-show-image{
+	height:180px;
+	width:250px;
+	border-radius:20px;
+}

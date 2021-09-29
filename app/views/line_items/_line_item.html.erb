@@ -1,0 +1,7 @@
+
+<tr id="current_item">
+	<td><%= line_item.store.name %></td>
+	<td class="text-center pl-2"><%= line_item.quantity %>x</td>
+	<td><%= number_to_indian_currency(line_item.store.price) %></td>
+	<td class="item_price"><%= number_to_indian_currency(line_item.total_price) %></td>
+</tr>

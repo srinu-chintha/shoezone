@@ -1,0 +1,48 @@
+<div class="stores-new-bg">
+  <div class="stores-new-card text-white">
+    <p id="notice"><%= notice %></p>
+    <%= image_tag @store.product_image,class:"stores-show-image mb-3" %>
+    <p>
+      <strong>Name:</strong>
+      <%= @store.name %>
+    </p>
+
+    <p>
+      <strong>Brand:</strong>
+      <%= @store.brand %>
+    </p>
+
+    <p>
+      <strong>Model:</strong>
+      <%= @store.model %>
+    </p>
+
+    <p>
+      <strong>Color:</strong>
+      <%= @store.color %>
+    </p>
+
+    <p>
+      <strong>Size:</strong>
+      <%= @store.size %>
+    </p>
+
+    <p>
+      <strong>Price:</strong>
+      <%= @store.price %>
+    </p>
+
+    <p>
+      <strong>Description:</strong>
+      <%= @store.description %>
+    </p>
+
+    <%= link_to 'Edit', edit_store_path(@store),class:"btn btn-outline-light" %>  
+    <%= link_to 'Back', stores_path,class:"btn btn-outline-dark" %>
+  </div>
+</div>
+
+
+
+
+

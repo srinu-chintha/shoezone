@@ -1,0 +1,99 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+ .icons{
+ 	color:white;
+ 	margin-right:10px;
+ }
+.logo-image{
+	width:50px;
+	height:50px;
+}
+.home-bg{
+	background-image:url("https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80");
+	height: 100vh;
+	background-size:cover;
+}
+
+
+.yield-container{
+	overflow: scroll;
+	height:100vh;
+}
+/*gallery index*/
+.gallary-outer-bg{
+	background-color:white;
+}
+.shoe-gallery-head{
+	font-family: "Bonheur Royale"
+}
+.shoniverse-logo{
+	height:35px;
+	width:180px;
+	padding: 0px 10px;
+}
+.logo-bg{
+	border-radius:10px;
+}
+.card-image{
+	height:25vh !important;
+	width:100% !important;
+}
+.shoe-name{
+	font-weight:bold;
+}
+.shoe-discription{
+	font-weight:200;
+	font-size:15px;
+	color:#0e9e81;
+}
+.card-bottom{
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+}
+.card-button{
+	align-self:center;
+	padding:3px 20px;
+	margin-left: 140px;
+}
+
+/*devise layout*/
+
+.devise-bg{
+	overflow:auto;
+	background-image:url("https://images.unsplash.com/photo-1590336751349-f65720fee481?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2960&q=80");
+	height:100vh;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	background-size:cover;
+}
+.devise-card{
+	width:550px;
+	background-color:#ffffff15;
+	padding:30px;
+	border:1px solid #ffffff;
+	border-radius:15px;
+}
+.unhappy-card{
+	border:1px solid white;
+	border-radius:10px;
+}
+
+
+

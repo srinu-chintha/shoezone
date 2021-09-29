@@ -1,0 +1,12 @@
+Hi <%= @name %>..!<br/><br/>
+Your payment <%= @amount %> is successfull<br/>
+These are the product details:
+<% $cart.each do |item|%>
+<br/><br/>
+<strong>Name: </strong><%= item.store.name%><br/>
+<strong>Price: </strong><%= item.store.price%><br/>
+<strong>Quantity: </strong><%= item.quantity%><br/>
+<% end %>
+<br/>
+Thank you for shopping
+

@@ -1,0 +1,20 @@
+// Place all the styles related to the gallery controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.card-details-bg{
+	overflow:auto;
+	background-image:url("https://images.unsplash.com/photo-1503197979108-c824168d51a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2833&q=80");
+	height:100vh;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	background-size:cover;
+}
+.card-details-card{
+	width:500px;
+	background-color:#08080790;
+	padding:30px;
+	border:1px solid #000000;
+	border-radius:20px;
+}

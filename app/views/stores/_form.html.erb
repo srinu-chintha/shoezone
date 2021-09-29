@@ -1,0 +1,59 @@
+<div class="stores-form-bg">
+  <%= form_with(model: store, local: true) do |form| %>
+  <% if store.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(store.errors.count, "error") %> prohibited this store from being saved:</h2>
+
+      <ul>
+      <% store.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field form-group mb-4">
+     <% form.label :product_image %>
+     <%= form.file_field :product_image,class:"form-control",placeholder:"product image" %>
+  </div>
+  <div class="field form-group mb-4">
+    <% form.label :name %>
+    <%= form.text_field :name,class:"form-control",placeholder:"Name" %>
+  </div>
+
+  <div class="field form-group mb-4">
+    <% form.label :brand %>
+    <%= form.text_field :brand,class:"form-control",placeholder:"Brand" %>
+  </div>
+
+  <div class="field form-group mb-4">
+    <% form.label :model %>
+    <%= form.text_field :model,class:"form-control",placeholder:"Model" %>
+  </div>
+ 
+  <div class="field form-group mb-4">
+    <% form.label :color %>
+    <%= form.text_field :color,class:"form-control",placeholder:"Colour" %>
+  </div>
+
+  <div class="field form-group mb-4">
+    <% form.label :size %>
+    <%= form.text_field :size,class:"form-control",placeholder:"Size" %>
+  </div>
+
+  <div class="field form-group mb-4">
+    <% form.label :price %>
+    <%= form.text_field :price,class:"form-control",placeholder:"Price" %>
+  </div>
+
+  <div class="field form-group mb-4">
+    <% form.label :description %>
+    <%= form.text_area :description,class:"form-control",placeholder:"Description" %>
+  </div>
+
+  <div class="actions form-group mb-4">
+    <%= form.submit class:"btn btn-outline-primary" %>
+  </div>
+<% end %>
+
+</div>

@@ -114,4 +114,6 @@ Rails.application.configure do
 
    #config.action_mailer.default_url_options = { :host => "https://immense-wildwood-49769.herokuapp.com/" }
     config.action_mailer.perform_deliveries = true
+
+    config.log_level = :debug
 end

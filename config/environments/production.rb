@@ -105,8 +105,8 @@ config.action_mailer.smtp_settings = {
   address:              'smtp.gmail.com',
   port:                 587,
   domain:               'example.com',
-  user_name:            'srinuchintha.ch@gmail.com',
-  password:             'Qwert1463@',
+  user_name:            'sunnysusanparlapelly@gmail.com',
+  password:             '1099109109aA#',
   authentication:       'plain',
   enable_starttls_auto: true }
   # Do not dump schema after migrations.

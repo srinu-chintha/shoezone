@@ -96,7 +96,7 @@ config.action_mailer.default :charset => "utf-8"
 
   #  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
-   config.action_mailer.default_url_options = { :host => "https://immense-wildwood-49769.herokuapp.com/" }
+   config.action_mailer.default_url_options = { :host => "https://thawing-everglades-25233.herokuapp.com/" }
   config.action_mailer.perform_deliveries = true
   # config.action_mailer.raise_delivery_errors = true
   #config.action_mailer.default_url_options = { host: ENV['MAIL_HOST'] }

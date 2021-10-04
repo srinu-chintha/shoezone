@@ -4,6 +4,7 @@ class CartsController < ApplicationController
   # GET /carts or /carts.json
   def index
     @carts = Cart.all
+    redirect_to  gallery_index_path
   end
 
   # GET /carts/1 or /carts/1.json

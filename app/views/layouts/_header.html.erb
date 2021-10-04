@@ -49,7 +49,7 @@
           <li class="nav-link">
               <%= form_tag("/gallery/search", method: "get") do %>
                 <% label_tag(:Search) %>
-                <%= text_field_tag(:search) %>
+                <%= text_field_tag(:search)  %>
                 <%= submit_tag("search" ,class: "btn btn-outline-warning btn-sm")%>
               <% end %>
           </li>

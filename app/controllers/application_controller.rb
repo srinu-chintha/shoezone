@@ -1,7 +1,11 @@
 class ApplicationController < ActionController::Base
 	#before_action :authenticate_user!
-	def after_sign_in_path(user)
-	    home_index_path
+	def after_sign_in_path_for(user)
+		if $flag==0
+	    	home_index_path
+	    else
+	    	"/carts/#{$present_cart}"
+	    end
 	end
 
 	def after_sign_out_path_for(scope)

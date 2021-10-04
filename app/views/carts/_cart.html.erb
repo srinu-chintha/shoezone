@@ -1,4 +1,6 @@
 <% unless cart.line_items.empty? %>
+<% $present_cart=cart.id %>
+<% $flag=1 %>
 <div class="cart_title">
 	<h1 >Your Cart</h1>
 </div>
@@ -26,7 +28,6 @@
 <% if user_signed_in? %>
 
 	<%= link_to "Checkout" ,'/gallery/checkout',{:style=>'color:#FFFFFF;', :class => "btn btn-outline-secondary btn-sm mt-2 "} %>
-
 
 <% else %>
 	<%= link_to "Checkout", new_user_session_path,{:style=>'color:#FFFFFF;', :class => "btn btn-outline-secondary btn-sm mt-2"} %>
